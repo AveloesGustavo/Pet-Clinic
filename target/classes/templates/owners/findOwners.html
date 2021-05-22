@@ -1,0 +1,58 @@
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
+    <head>
+
+    </head>
+
+    <body>
+        <h2>Find Owners</h2>
+        <!-- marcação para pesquisa -->
+        <div class="form-horizontal">
+            <div class="form-group searchOwners">
+                <div class="col-sm-6">
+                    <select class="js-example-basic-single form-control" name="state">
+
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-default">Ir para ficha</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!--<form th:object="${owner}" th:action="@{/owners}" method="get"
+              class="form-horizontal" id="search-owner-form">
+            <div class="form-group">
+                <div class="control-group" id="lastNameGroup">
+                    <label class="col-sm-2 control-label">Last name </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" th:field="*{lastName}" size="30"
+                               maxlength="80" /> <span class="help-inline"><div
+                                th:if="${#fields.hasAnyErrors()}">
+                                <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Error</p>
+                            </div></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Find
+                        Owner</button>
+                </div>
+            </div>
+        </form>-->
+
+        <br />
+        <a class="btn btn-default" th:href="@{/owners/new}">Add Owner</a>   
+        <script th:src="@{/resources/js/jquery-3.5.1.js}" type="text/javascript"></script>
+    </script>
+    <script>
+    </script>
+</body>
+</html>
